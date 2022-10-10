@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="output.css">
+    <title>Document</title>
+  </head>
+ 
+  <body >
+    <div class="flex h-screen w-screen items-center justify-center bg-[rgb(26,42,51)] text-white     ">
+      <div id="ff" class="flex w-auto flex-col items-center justify-between space-y-10 text-center">
+        <div>
+          <div class="w-20"><svg id="logo" viewBox="0 0 72 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M8.562 1.634 16 9.073l7.438-7.439a3 3 0 0 1 4.243 0l2.685 2.685a3 3 0 0 1 0 4.243L22.927 16l7.439 7.438a3 3 0 0 1 0 4.243l-2.685 2.685a3 3 0 0 1-4.243 0L16 22.927l-7.438 7.439a3 3 0 0 1-4.243 0L1.634 27.68a3 3 0 0 1 0-4.243L9.073 16 1.634 8.562a3 3 0 0 1 0-4.243L4.32 1.634a3 3 0 0 1 4.243 0Z" fill="#31C3BD" /><path d="M56.1 0c8.765 0 15.87 7.106 15.87 15.87 0 8.766-7.105 15.871-15.87 15.871-8.765 0-15.87-7.105-15.87-15.87C40.23 7.106 47.334 0 56.1 0Zm0 9.405a6.466 6.466 0 1 0 0 12.931 6.466 6.466 0 0 0 0-12.931Z" fill="#F2B137" fill-rule="nonzero" /></g></svg></div>
+		</div>
+
+        <div class="w-96 space-y-5 rounded-2xl bg-[rgb(31,54,65)] py-6 shadow-2xl">
+          <h4 id="j" class="text-sm font-bold text-[rgb(168,191,201)]">PLAY XO WITH YOUR FRIENDS</h4>
+          <div class="mx-5 flex h-20 w-auto items-center justify-center space-x-40 rounded-xl bg-[rgb(26,42,51)]">
+            <button id="pimarkx" class="h-16 text-4xl font-extrabold">
+              <svg class="w-10 fill-[rgb(168,191,201)] hover:fill-[rgb(49,195,189)] active:fill-[rgb(41,219,213)]" id="icon-x-default" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill-rule="evenodd" /></svg>
+            </button>
+            <button id="pimarko" class="h-16 text-4xl">
+              <svg class="w-10 fill-[rgb(168,191,201)] hover:fill-[rgb(242,177,55)] active:fill-[rgb(247,197,105)]" id="icon-o-default" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32 0c17.673 0 32 14.327 32 32 0 17.673-14.327 32-32 32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0Zm0 18.963c-7.2 0-13.037 5.837-13.037 13.037 0 7.2 5.837 13.037 13.037 13.037 7.2 0 13.037-5.837 13.037-13.037 0-7.2-5.837-13.037-13.037-13.037Z" /></svg>
+            </button>
+          </div>
+          <h4 class="text-sm font-medium text-[rgb(89,112,122)]"> X GOES FIRST</h4>
+        </div>
+
+        <button id="ewgamecpu" ></button>
+        
+		<button id="ewgamepvp" class="text-md w-96 rounded-xl bg-[rgb(242,177,55)] py-4 text-center font-bold text-[rgb(26,42,51)] shadow-2xl hover:bg-[rgb(41,219,213)]">NEW GAME</button>
+      </div>
+
+	  <div id="gg" class=" w-auto flex-col items-center justify-between space-y-10 text-center hidden ">
+        	<div class="flex w-96 justify-between">
+
+          <div class="w-20"><svg id="logo" viewBox="0 0 72 32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M8.562 1.634 16 9.073l7.438-7.439a3 3 0 0 1 4.243 0l2.685 2.685a3 3 0 0 1 0 4.243L22.927 16l7.439 7.438a3 3 0 0 1 0 4.243l-2.685 2.685a3 3 0 0 1-4.243 0L16 22.927l-7.438 7.439a3 3 0 0 1-4.243 0L1.634 27.68a3 3 0 0 1 0-4.243L9.073 16 1.634 8.562a3 3 0 0 1 0-4.243L4.32 1.634a3 3 0 0 1 4.243 0Z" fill="#31C3BD" /><path d="M56.1 0c8.765 0 15.87 7.106 15.87 15.87 0 8.766-7.105 15.871-15.87 15.871-8.765 0-15.87-7.105-15.87-15.87C40.23 7.106 47.334 0 56.1 0Zm0 9.405a6.466 6.466 0 1 0 0 12.931 6.466 6.466 0 0 0 0-12.931Z" fill="#F2B137" fill-rule="nonzero" /></g></svg></div>
+          
+		  <div class="flex w-16 justify-between font-bold text-[rgb(168,191,201)]">
+            <svg class="h-6 w-5 fill-[rgb(168,191,201)]" id="icon-x-default" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill-rule="evenodd" /></svg>
+            TURN
+          </div>
+          <button class="rounded-lg bg-[rgb(168,191,201)] p-3">
+            <svg id="icon-restart" class="w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M19.524 0h-1.88a.476.476 0 0 0-.476.499l.159 3.284A9.81 9.81 0 0 0 9.835.317C4.415.317-.004 4.743 0 10.167.004 15.597 4.406 20 9.835 20a9.796 9.796 0 0 0 6.59-2.536.476.476 0 0 0 .019-.692l-1.348-1.349a.476.476 0 0 0-.65-.022 6.976 6.976 0 0 1-9.85-.63 6.987 6.987 0 0 1 .63-9.857 6.976 6.976 0 0 1 10.403 1.348l-4.027-.193a.476.476 0 0 0-.498.476v1.881c0 .263.213.476.476.476h7.944A.476.476 0 0 0 20 8.426V.476A.476.476 0 0 0 19.524 0Z" fill="#1F3641" /></svg>
+          </button>
+       	 </div>
+
+       	 <div class="grid grid-cols-3 grid-rows-3 gap-5">
+          <div   value="0" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><p></p></div>
+          <div   value="1" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><a></a></div>
+          <div   value="2" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><area></div>
+          <div   value="3" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><ul></ul></div>
+          <div   value="4" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><form></form></div>
+          <div   value="5" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><article></article></div>
+          <div   value="6" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><audio></audio></div>
+          <div   value="7" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><div></div></div>
+          <div   value="8" class="rounded-lg bg-[rgb(31,54,65)] p-14 shadow-lg tics"><picture></picture></div>
+       		 </div>
+       	
+
+       	
+     	</div>
+      
+		<div id="rr" class=" hidden flex-col items-center justify-between space-y-10 text-center  absolute h-72 w-screen bg-[rgb(31,54,65)] shadow-2xl shadow-black ease-in-out ">
+		   <div class="flex justify-center space-x-10 py-10">
+			 <div id="tt" class="w-20">
+		   <svg class="w-20 fill-[rgb(49,195,189)]" id="icon-x-default" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M15.002 1.147 32 18.145 48.998 1.147a3 3 0 0 1 4.243 0l9.612 9.612a3 3 0 0 1 0 4.243L45.855 32l16.998 16.998a3 3 0 0 1 0 4.243l-9.612 9.612a3 3 0 0 1-4.243 0L32 45.855 15.002 62.853a3 3 0 0 1-4.243 0L1.147 53.24a3 3 0 0 1 0-4.243L18.145 32 1.147 15.002a3 3 0 0 1 0-4.243l9.612-9.612a3 3 0 0 1 4.243 0Z" fill-rule="evenodd" /></svg>
+			 </div>
+		 <h4 id="tdt" class="pt-5 text-4xl font-semibold text-[rgb(49,195,189)]">TAKES THE ROUND</h4>
+		   </div>
+		   <div class="space-x-10">
+		 <button id="fff" class="h-12 w-28 rounded-lg bg-[rgb(168,191,201)] font-bold text-[rgb(26,42,51)]">QUIT</button>
+		   </div>
+	  </div>
+	  
+    </div>
+  </body>
+  <script type="" src="app.js"></script>
+</html>
